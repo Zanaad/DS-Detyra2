@@ -133,42 +133,8 @@ final class Bifid {
         return result.toString();
     }
 
-    public String decrypt( String aText ) {
-        List <Integer> rowOne = new ArrayList<>();
-        List <Integer> rowTwo = new ArrayList<>();
-
-        for ( char ch : aText.toCharArray() ) {
-            Point coordinate = coordinates.get(Character.toUpperCase(ch));
-            if ( coordinate == null ) {
-                throw new IllegalArgumentException( "Character" + ch + "is not found in the Polybius Square!!!");
-            }
-            rowOne.add( coordinate.x );
-            rowTwo.add( coordinate.y );
-        }
-
-        rowOne.addAll( rowTwo );
-        StringBuilder result2 = new StringBuilder();
-        for( int i = 0 ; i < rowOne.size() / 2 ; i += 1 ) {
-            int size = rowOne.size();
-            int half = size / 2;
-            int quarter = ( int )( Math.floor( size / 4.0 ) );
-            int index = ( int ) ( Math.ceil( i / 2.0 ) );
-
-            if( half % 2 ==0 ) {
-                if ( i % 2 == 0 ) {
-                    result2.append( grid [ rowOne.get( index ) ] [ rowOne.get( index + quarter ) ] );
-                }
-                else result2.append( grid [ rowOne.get( half + index - 1 ) ] [ rowOne.get( half + quarter + index - 1 ) ] );
-            }
-            else 
-                {
-                    if ( i % 2 == 0 ) {
-                        result2.append( grid [ rowOne.get( index ) ] [ rowOne.get( half + quarter + index ) ] ); 
-                    }
-                    else result2.append( grid [ rowOne.get( half + index - 1 ) ] [ rowOne.get( quarter + index ) ] );
-                }
-        }
-        return result2.toString();
+    public String decrypt(String aText) {
+        return "decrypt";
     }
 
     public void display() {
