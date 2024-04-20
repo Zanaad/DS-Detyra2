@@ -63,7 +63,7 @@ public final class BifidCipher {
                 keepRunning = false;
             }
         }
-        scanner.close();
+       
         System.out.println("Program has ended.");
     }
 }
