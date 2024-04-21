@@ -1,3 +1,32 @@
+# Bifid and Scytale Cipher Implementation
+
+This project implements the Bifid and Scytale ciphers in Java.
+
+## Getting Started
+
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Java installed on your system.
+
+### Installing
+
+- Clone the repository to your local machine.
+- Navigate to the project directory.
+- Open with a Java editor.
+
+## Running the Program
+
+- The program starts at `Main.java` main.
+
+### Bifid Cipher
+
+1. Compile the Java files:
+
+
+
+
 # Bifid Cipher Algorithm
 
 ## Introduction
