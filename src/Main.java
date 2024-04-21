@@ -26,7 +26,9 @@ public class Main {
                     System.out.println("Enter key:");
                     int key = Integer.parseInt(scanner.nextLine());
                     String encrypted = ScytaleCipher.encrypt(plaintext, key);
+                    String decrypted=ScytaleCipher.decrypt(encrypted,key);
                     System.out.println("Encrypted text: " + encrypted);
+                    System.out.println("Decrypted text: " + decrypted);
                     System.out.println("Do you want to continue on this cypher? (Y/N)");
                     String continueChoice = scanner.nextLine().toUpperCase();
                     if (!continueChoice.startsWith("Y")) {

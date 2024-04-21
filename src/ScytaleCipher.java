@@ -1,4 +1,5 @@
 public class ScytaleCipher{
+    
     public static String encrypt(String plaintext, int key){
         int numberOfTurns=(plaintext.length()+key-1)/key;
         char [][] scytaleRod=new char[numberOfTurns][key];
@@ -22,7 +23,8 @@ public class ScytaleCipher{
         }
         return ciphertext.toString();
     }
-  public static String decrypt(String cipherText, int key) {
+    
+    public static String decrypt(String cipherText, int key) {
             int col = key;
             int numberOfTurns=cipherText.length() / key;
             char[][] scytaleRod = new char[numberOfTurns][col];
@@ -44,7 +46,4 @@ public class ScytaleCipher{
             }
             return plaintext.toString();
         }
-
-
-
 }
