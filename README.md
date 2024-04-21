@@ -17,6 +17,25 @@ The Bifid cipher is a classical encryption algorithm that combines the Polybius 
 ### Decryption Process:
 Decryption involves reversing the encryption process, starting from the bifid coordinates to retrieve the original text.
 
+
+
+
+
+
+## Example of Execution
+**5x5:** Includes only alphabet letters (i and j are joined).  
+<br>
+  <img src="https://github.com/Zanaad/DataSecurityDetyra2/assets/96538665/da373828-8bd4-483d-bb76-0bccebd2bf3d" alt="bifid 5x5" height="400"> 
+
+**6x6:** Includes alphabet letters and numbers.
+
+  <img src="https://github.com/Zanaad/DataSecurityDetyra2/assets/96538665/cdb5799e-82da-4a90-bc8f-1272fca89427" alt="bifid 6x6" height="400"> 
+
+
+
+
+
+
 # Scytale Cipher Algorithm
 
 ## Introduction
@@ -30,6 +49,8 @@ The message is written on a strip of paper which is wrapped around the stick. Wh
 ### Decryption
 To decipher the message, you would wrap the strip of paper around another stick with the same diameter as the one used for encryption. That’s why the diameter can be seen as a key. To implement the decryption in code, we read the text row-wise. To perform the decryption one must know the number of columns.
 
-## Shembull i ekzekutimit
+## Example of Execution
 
-![Scytale](https://github.com/Zanaad/DataSecurityDetyra2/assets/116732054/554c3fa1-1b07-465c-a9eb-5139fb32effe)
+![image](https://github.com/Zanaad/DataSecurityDetyra2/assets/96538665/af77e087-5d29-444f-b1fc-9963fffb8587)
+
+
