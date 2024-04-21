@@ -22,29 +22,29 @@ public class ScytaleCipher{
         }
         return ciphertext.toString();
     }
-    public static String decrypt(String cipherText, int key) {
-        return "Dekriptimi";
-        public static String decrypt(String cipherText, int key) {
-    int col = key;
-    int row = (int) Math.ceil((double) cipherText.length() / key);
-    char[][] cipherMatrix = new char[row][col];
+  public static String decrypt(String cipherText, int key) {
+            int col = key;
+            int numberOfTurns=cipherText.length() / key;
+            char[][] scytaleRod = new char[numberOfTurns][col];
+            int index = 0;
 
-    int index = 0;
-    for (int r = 0; r < row; r++) {
-        for (int c = 0; c < col; c++) {
-            cipherMatrix[r][c] = cipherText.charAt(index);
-            index++;
+            for (int c = 0; c < col; c++) {
+                for (int r = 0; r < numberOfTurns; r++) {
+                    scytaleRod[r][c] = cipherText.charAt(index);
+                    index++;
+                }
+            }
+
+            StringBuilder plaintext = new StringBuilder();
+
+            for (int r = 0; r < numberOfTurns; r++) {
+                for (int c = 0; c < col; c++) {
+                    plaintext.append(scytaleRod[r][c]);
+                }
+            }
+            return plaintext.toString();
         }
-    }
 
-    StringBuilder plaintextBuilder = new StringBuilder();
-    for (int c = 0; c < col; c++) {
-        for (int r = 0; r < row; r++) {
-            plaintextBuilder.append(cipherMatrix[r][c]);
-        }
-    }
-    return plaintextBuilder.toString().trim();
-}
 
-    }
+
 }
