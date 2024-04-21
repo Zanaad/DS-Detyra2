@@ -31,3 +31,5 @@ The message is written on a strip of paper which is wrapped around the stick. Wh
 To decipher the message, you would wrap the strip of paper around another stick with the same diameter as the one used for encryption. That’s why the diameter can be seen as a key. To implement the decryption in code, we read the text row-wise. To perform the decryption one must know the number of columns.
 
 ## Shembull i ekzekutimit
+
+![Scytale](https://github.com/Zanaad/DataSecurityDetyra2/assets/116732054/554c3fa1-1b07-465c-a9eb-5139fb32effe)
