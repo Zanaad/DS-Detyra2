@@ -20,13 +20,6 @@ These instructions will help you get a copy of the project up and running on you
 
 - The program starts at `Main.java` main.
 
-### Bifid Cipher
-
-1. Compile the Java files:
-
-
-
-
 # Bifid Cipher Algorithm
 
 ## Introduction
